@@ -3,7 +3,7 @@
 </head>
 <body>
 code
-<input type="text" id="latentcode" name="latentcode" value="4"><br><br>
+<input type="text" id="latentcode" name="latentcode" value="1"><br><br>
 edu
 <input id="input_edu" type="range" min="-12" value="0" max="12" step="1">
 <br>
@@ -12,38 +12,10 @@ health
 <br>
 income
 <input id="input_inc" type="range" min="-12" value="0" max="12" step="1">
-<img src="sg2proj_combined_inference4/4/proj_styleganproj_edu0_health0_inc0.jpg" id="projimg">
+<img id="projimg" src="https://causewegangangan.s3.eu-west-2.amazonaws.com/sg2proj_combined_inference_precise/1/proj_styleganproj_edu0_health0_inc0_code1.jpg">
 <div id="output"></div>
 <script>
 function change_img() {
-  map_edu={}
-//[-27, -21, -15, -9, -3, 3, 9, 15, 21]
-//  map_edu[-3]=-15;
-//  map_edu[-2]=-10;
-//  map_edu[-1]=-5;
-//  map_edu[0]=0;
-//  map_edu[3]=15;
-//  map_edu[2]=10;
-//  map_edu[1]=5;
-//  map={}
-//  map_health={}
-////[-27, -21, -15, -9, -3, 3, 9, 15, 21]
-//  map_health[-3]=-20;
-//  map_health[-2]=-17.5;
-//  map_health[-1]=-15;
-//  map_health[0]=0;
-//  map_health[3]=20;
-//  map_health[2]=17.5;
-//  map_health[1]=15;
-  map={}
-//[-27, -21, -15, -9, -3, 3, 9, 15, 21]
-  map[-3]=-12;
-  map[-2]=-8;
-  map[-1]=-4;
-  map[0]=0;
-  map[1]=-map[-1]
-  map[2]=-map[-2]
-  map[3]=-map[-3]
   var input_edu = document.getElementById('input_edu').value;
   input_edu=input_edu;
   var input_health = document.getElementById('input_health').value;
@@ -52,7 +24,8 @@ function change_img() {
   input_inc=input_inc;
   var projimg = document.getElementById('projimg');
   var lc = document.getElementById('latentcode').value;
-  projimg.src="sg2proj_combined_inference4/4/proj_styleganproj_edu"+input_edu+"_health"+input_health+"_inc"+input_inc+"_code"+lc+".jpg";
+//  projimg.src="https://causewegangangan.s3.eu-west-2.amazonaws.com/sg2proj_combined_inference_precise/1/proj_styleganproj_edu-10_health-10_inc-10_code1.jpg
+  projimg.src="https://causewegangangan.s3.eu-west-2.amazonaws.com/sg2proj_combined_inference_precise/"+lc+"/proj_styleganproj_edu"+input_edu+"_health"+input_health+"_inc"+input_inc+"_code"+lc+".jpg";
 }
 
 var input_edu = document.getElementById('input_edu');
