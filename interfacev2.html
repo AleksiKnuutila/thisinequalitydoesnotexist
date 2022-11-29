@@ -25,6 +25,7 @@
 <body>
   <div class="menu-container"></div>
   <div class="content-container">
+<!--
     <div class="banner" style="background: url('img/dummy-background.jpeg') no-repeat center; background-size: cover; height: 200px;"></div>
     <div class="banner">
       <div class="banner-table flex-column">
@@ -41,15 +42,19 @@
         </div>
       </div>
     </div>
+-->
     <div class="content">
       <div class="content-table flex-column">
         <!-------------------------------------------------------------------------------------------->
         <!--Start Intro-->
         <div class="flex-row">
           <div class="flex-item flex-column">
+            <img class="image" id="projimg" src="https://causewegangangan.s3.eu-west-2.amazonaws.com/sg2proj_combined_inference_precise/1/proj_styleganproj_edu0_health0_inc0_code1.jpg">
+          </div>
+          <div class="flex-item flex-column">
             <p class="text text-large">
-code
-<input type="text" id="latentcode" name="latentcode" value="1"><br><br>
+<input type="hidden" id="latentcode" name="latentcode" value="1"><br><br>
+<button class="custom-button custom-button-primary" onclick="change_lc_code();">Change street</button><br>
 education
 <input id="input_edu" type="range" min="-12" value="0" max="12" step="1">
 <br>
@@ -60,10 +65,8 @@ income
 <input id="input_inc" type="range" min="-12" value="0" max="12" step="1">
             </p>
           </div>
-          <div class="flex-item flex-column">
-            <img class="image" id="projimg" src="https://causewegangangan.s3.eu-west-2.amazonaws.com/sg2proj_combined_inference_precise/1/proj_styleganproj_edu0_health0_inc0_code1.jpg">
-          </div>
         </div>
+<!--
         <div class="flex-row">
           <div class="flex-item flex-column">
             <p class="text add-top-margin">
@@ -75,12 +78,14 @@ income
             </p>
           </div>
         </div>
+-->
         <!--End Intro-->
         <!-------------------------------------------------------------------------------------------->
+
         <!--Start Text Only-->
         <div class="flex-row">
           <div class="flex-item flex-column">
-            <h2>Text Only</h2>
+            <h2>This inequality does not exist</h2>
             <hr>
             <p class="text">
               Li Europan lingues es membres del sam familie. Lor separat existentie es un myth. Por scientie, musica,

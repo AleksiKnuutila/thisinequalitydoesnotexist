@@ -11,6 +11,26 @@ function change_img() {
   projimg.src="https://causewegangangan.s3.eu-west-2.amazonaws.com/sg2proj_combined_inference_precise/"+lc+"/proj_styleganproj_edu"+input_edu+"_health"+input_health+"_inc"+input_inc+"_code"+lc+".jpg";
 }
 
+function get_random_image_number() {
+  max=10;
+  return Math.floor(Math.random() * max);
+}
+
+function change_lc_code() {
+  new_lc=get_random_image_number();
+  var lc = document.getElementById('latentcode');
+  lc.value=get_random_image_number();
+
+  var input_edu = document.getElementById('input_edu');
+  input_edu.value=0;
+  var input_edu = document.getElementById('input_health');
+  input_health.value=0;
+  var input_inc = document.getElementById('input_inc');
+  input_inc.value=0;
+
+  change_img();
+}
+
 var input_edu = document.getElementById('input_edu');
 var input_health = document.getElementById('input_health');
 var input_inc = document.getElementById('input_inc');
@@ -33,3 +53,5 @@ input_inc.oninput = function(){
 input_edu.oninput();
 input_health.oninput();
 input_inc.oninput();
+
+
