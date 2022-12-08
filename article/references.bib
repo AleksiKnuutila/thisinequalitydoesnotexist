@@ -1,0 +1,173 @@
+@article{Gui2021,
+  title = {A {{Review}} on {{Generative Adversarial Networks}}: {{Algorithms}}, {{Theory}}, and {{Applications}}},
+  shorttitle = {A {{Review}} on {{Generative Adversarial Networks}}},
+  author = {Gui, Jie and Sun, Zhenan and Wen, Yonggang and Tao, Dacheng and Ye, Jieping},
+  year = {2021},
+  journal = {IEEE Transactions on Knowledge and Data Engineering},
+  pages = {1--1},
+  issn = {1558-2191},
+  doi = {10.1109/TKDE.2021.3130191},
+  abstract = {Generative adversarial networks (GANs) have recently become a hot research topic; however, they have been studied since 2014, and a large number of algorithms have been proposed. However, few comprehensive studies exist explaining the connections among different GANs variants and how they have evolved. In this paper, we attempt to provide a review of the various GANs methods from the perspectives of algorithms, theory, and applications. First, the motivations, mathematical representations, and structures of most GANs algorithms are introduced in detail and we compare their commonalities and differences. Second, theoretical issues related to GANs are investigated. Finally, typical applications of GANs in image processing and computer vision, natural language processing, music, speech and audio, medical field, and data science are discussed.},
+  keywords = {Algorithm,Applications,Data models,Deep Learning,Generative adversarial networks,Generative Adversarial Networks,Generators,Inference algorithms,Linear programming,Machine learning algorithms,Natural language processing,Theory},
+  file = {/Users/aleksi/Sync/NextCloud/JYU Groups/mutku-vastapuhe/Luettavaa/Zotero sync/Gui et al_2021_A Review on Generative Adversarial Networks.pdf;/Users/aleksi/Zotero/storage/IDWTCVCD/9625798.html}
+}
+
+@misc{Kim2018,
+  title = {Interpretability {{Beyond Feature Attribution}}: {{Quantitative Testing}} with {{Concept Activation Vectors}} ({{TCAV}})},
+  shorttitle = {Interpretability {{Beyond Feature Attribution}}},
+  author = {Kim, Been and Wattenberg, Martin and Gilmer, Justin and Cai, Carrie and Wexler, James and Viegas, Fernanda and Sayres, Rory},
+  year = {2018},
+  month = jun,
+  number = {arXiv:1711.11279},
+  eprint = {1711.11279},
+  eprinttype = {arxiv},
+  primaryclass = {stat},
+  publisher = {{arXiv}},
+  doi = {10.48550/arXiv.1711.11279},
+  abstract = {The interpretation of deep learning models is a challenge due to their size, complexity, and often opaque internal state. In addition, many systems, such as image classifiers, operate on low-level features rather than high-level concepts. To address these challenges, we introduce Concept Activation Vectors (CAVs), which provide an interpretation of a neural net's internal state in terms of human-friendly concepts. The key idea is to view the high-dimensional internal state of a neural net as an aid, not an obstacle. We show how to use CAVs as part of a technique, Testing with CAVs (TCAV), that uses directional derivatives to quantify the degree to which a user-defined concept is important to a classification result--for example, how sensitive a prediction of "zebra" is to the presence of stripes. Using the domain of image classification as a testing ground, we describe how CAVs may be used to explore hypotheses and generate insights for a standard image classification network as well as a medical application.},
+  archiveprefix = {arXiv},
+  keywords = {Statistics - Machine Learning},
+  file = {/Users/aleksi/Sync/NextCloud/JYU Groups/mutku-vastapuhe/Luettavaa/Zotero sync/Kim et al_2018_Interpretability Beyond Feature Attribution.pdf;/Users/aleksi/Zotero/storage/6NVRV3UT/1711.html}
+}
+
+@misc{Langer2020,
+  title = {Formatting the {{Landscape}}: {{Spatial}} Conditional {{GAN}} for Varying Population in Satellite Imagery},
+  shorttitle = {Formatting the {{Landscape}}},
+  author = {Langer, Tomas and Fedorova, Natalia and Hagensieker, Ron},
+  year = {2020},
+  month = dec,
+  number = {arXiv:2101.05069},
+  eprint = {2101.05069},
+  eprinttype = {arxiv},
+  primaryclass = {cs, eess},
+  publisher = {{arXiv}},
+  doi = {10.48550/arXiv.2101.05069},
+  abstract = {Climate change is expected to reshuffle the settlement landscape: forcing people in affected areas to migrate, to change their lifeways, and continuing to affect demographic change throughout the world. Changes to the geographic distribution of population will have dramatic impacts on land use and land cover and thus constitute one of the major challenges of planning for climate change scenarios. In this paper, we explore a generative model framework for generating satellite imagery conditional on gridded population distributions. We make additions to the existing ALAE architecture, creating a spatially conditional version: SCALAE. This method allows us to explicitly disentangle population from the model's latent space and thus input custom population forecasts into the generated imagery. We postulate that such imagery could then be directly used for land cover and land use change estimation using existing frameworks, as well as for realistic visualisation of expected local change. We evaluate the model by comparing pixel and semantic reconstructions, as well as calculate the standard FID metric. The results suggest the model captures population distributions accurately and delivers a controllable method to generate realistic satellite imagery.},
+  archiveprefix = {arXiv},
+  keywords = {Computer Science - Computer Vision and Pattern Recognition,Computer Science - Machine Learning,Electrical Engineering and Systems Science - Image and Video Processing},
+  file = {/Users/aleksi/Sync/NextCloud/JYU Groups/mutku-vastapuhe/Luettavaa/Zotero sync/Langer et al_2020_Formatting the Landscape.pdf;/Users/aleksi/Zotero/storage/RGK43NPT/2101.html}
+}
+
+@article{Lei2020,
+  title = {A {{Geometric Understanding}} of {{Deep Learning}}},
+  author = {Lei, Na and An, Dongsheng and Guo, Yang and Su, Kehua and Liu, Shixia and Luo, Zhongxuan and Yau, Shing-Tung and Gu, Xianfeng},
+  year = {2020},
+  month = mar,
+  journal = {Engineering},
+  volume = {6},
+  number = {3},
+  pages = {361--374},
+  issn = {20958099},
+  doi = {10.1016/j.eng.2019.09.010},
+  abstract = {This work introduces an optimal transportation (OT) view of generative adversarial networks (GANs). Natural datasets have intrinsic patterns, which can be summarized as the manifold distribution principle: the distribution of a class of data is close to a low-dimensional manifold. GANs mainly accomplish two tasks: manifold learning and probability distribution transformation. The latter can be carried out using the classical OT method. From the OT perspective, the generator computes the OT map, while the discriminator computes the Wasserstein distance between the generated data distribution and the real data distribution; both can be reduced to a convex geometric optimization process. Furthermore, OT theory discovers the intrinsic collaborative\textemdash instead of competitive\textemdash relation between the generator and the discriminator, and the fundamental reason for mode collapse. We also propose a novel generative model, which uses an autoencoder (AE) for manifold learning and OT map for probability distribution transformation. This AE\textendash OT model improves the theoretical rigor and transparency, as well as the computational stability and efficiency; in particular, it eliminates the mode collapse. The experimental results validate our hypothesis, and demonstrate the advantages of our proposed model.},
+  langid = {english},
+  file = {/Users/aleksi/Zotero/storage/8MZMA3YB/Lei et al. - 2020 - A Geometric Understanding of Deep Learning.pdf}
+}
+
+@misc{LSOAAtlasLondonDatastore,
+  title = {{{LSOA Atlas}} - {{London Datastore}}},
+  langid = {american},
+  file = {/Users/aleksi/Zotero/storage/WYGDQLN3/lsoa-atlas.html}
+}
+
+@article{Mansourifar2022,
+  title = {{{GAN-Based Satellite Imaging}}: {{A Survey}} on {{Techniques}} and {{Applications}}},
+  shorttitle = {{{GAN-Based Satellite Imaging}}},
+  author = {Mansourifar, Hadi and Moskovitz, Alexander and Klingensmith, Ben and Mintas, Dino and Simske, Steven J.},
+  year = {2022},
+  journal = {IEEE Access},
+  volume = {10},
+  pages = {118123--118140},
+  issn = {2169-3536},
+  doi = {10.1109/ACCESS.2022.3221123},
+  abstract = {Satellite image analysis is widely used in many real-time applications, from agriculture to the military. Due to the wide range of Generative Adversarial Network (GAN) applications in multiple areas of satellite imaging, a comprehensive review is required in this area. This paper takes the first step in this direction by categorizing the GAN-based satellite imaging research using seven considerations. We discuss not only the challenges but also future research trends and directions. Among the major findings, we have observed increasing componentization and modularization of GANs to be used as elements of larger systems. In addition to the GAN types used exclusively in each application, we demonstrate the deep neural network architectures used as the generator structure. Eventually, we summarize the results and evaluate the significant impact of GANs on improving performance compared to traditional approaches.},
+  keywords = {Data mining,Generative adversarial network,Generative adversarial networks,geo-localization,image to image translation,Imaging,road extraction,Road traffic,Satellite broadcasting,satellite imaging,Satellites,Task analysis},
+  file = {/Users/aleksi/Sync/NextCloud/JYU Groups/mutku-vastapuhe/Luettavaa/Zotero sync/Mansourifar et al_2022_GAN-Based Satellite Imaging.pdf;/Users/aleksi/Zotero/storage/7RPVLSE8/9944659.html}
+}
+
+@misc{Sangers2022,
+  title = {Explainability of {{Deep Learning}} Models for {{Urban Space}} Perception},
+  author = {Sangers, Ruben and {van Gemert}, Jan and {van Cranenburgh}, Sander},
+  year = {2022},
+  month = aug,
+  number = {arXiv:2208.13555},
+  eprint = {2208.13555},
+  eprinttype = {arxiv},
+  primaryclass = {cs},
+  publisher = {{arXiv}},
+  doi = {10.48550/arXiv.2208.13555},
+  abstract = {Deep learning based computer vision models are increasingly used by urban planners to support decision making for shaping urban environments. Such models predict how people perceive the urban environment quality in terms of e.g. its safety or beauty. However, the blackbox nature of deep learning models hampers urban planners to understand what landscape objects contribute to a particularly high quality or low quality urban space perception. This study investigates how computer vision models can be used to extract relevant policy information about peoples' perception of the urban space. To do so, we train two widely used computer vision architectures; a Convolutional Neural Network and a transformer, and apply GradCAM -- a well-known ex-post explainable AI technique -- to highlight the image regions important for the model's prediction. Using these GradCAM visualizations, we manually annotate the objects relevant to the models' perception predictions. As a result, we are able to discover new objects that are not represented in present object detection models used for annotation in previous studies. Moreover, our methodological results suggest that transformer architectures are better suited to be used in combination with GradCAM techniques. Code is available on Github.},
+  archiveprefix = {arXiv},
+  keywords = {Computer Science - Computer Vision and Pattern Recognition},
+  file = {/Users/aleksi/Sync/NextCloud/JYU Groups/mutku-vastapuhe/Luettavaa/Zotero sync/Sangers et al_2022_Explainability of Deep Learning models for Urban Space perception.pdf;/Users/aleksi/Zotero/storage/9QM7NFB2/2208.html}
+}
+
+@misc{Schmidt2019,
+  title = {Visualizing the {{Consequences}} of {{Climate Change Using Cycle-Consistent Adversarial Networks}}},
+  author = {Schmidt, Victor and Luccioni, Alexandra and Mukkavilli, S. Karthik and Balasooriya, Narmada and Sankaran, Kris and Chayes, Jennifer and Bengio, Yoshua},
+  year = {2019},
+  month = may,
+  number = {arXiv:1905.03709},
+  eprint = {1905.03709},
+  eprinttype = {arxiv},
+  primaryclass = {cs},
+  publisher = {{arXiv}},
+  doi = {10.48550/arXiv.1905.03709},
+  abstract = {We present a project that aims to generate images that depict accurate, vivid, and personalized outcomes of climate change using Cycle-Consistent Adversarial Networks (CycleGANs). By training our CycleGAN model on street-view images of houses before and after extreme weather events (e.g. floods, forest fires, etc.), we learn a mapping that can then be applied to images of locations that have not yet experienced these events. This visual transformation is paired with climate model predictions to assess likelihood and type of climate-related events in the long term (50 years) in order to bring the future closer in the viewers mind. The eventual goal of our project is to enable individuals to make more informed choices about their climate future by creating a more visceral understanding of the effects of climate change, while maintaining scientific credibility by drawing on climate model projections.},
+  archiveprefix = {arXiv},
+  keywords = {Computer Science - Artificial Intelligence,Computer Science - Computer Vision and Pattern Recognition},
+  file = {/Users/aleksi/Sync/NextCloud/JYU Groups/mutku-vastapuhe/Luettavaa/Zotero sync/Schmidt et al_2019_Visualizing the Consequences of Climate Change Using Cycle-Consistent.pdf;/Users/aleksi/Zotero/storage/73IVG8AN/1905.html}
+}
+
+@misc{Schmidt2021,
+  title = {{{ClimateGAN}}: {{Raising Climate Change Awareness}} by {{Generating Images}} of {{Floods}}},
+  shorttitle = {{{ClimateGAN}}},
+  author = {Schmidt, Victor and Luccioni, Alexandra Sasha and Teng, M{\'e}lisande and Zhang, Tianyu and Reynaud, Alexia and Raghupathi, Sunand and Cosne, Gautier and Juraver, Adrien and Vardanyan, Vahe and {Hernandez-Garcia}, Alex and Bengio, Yoshua},
+  year = {2021},
+  month = oct,
+  number = {arXiv:2110.02871},
+  eprint = {2110.02871},
+  eprinttype = {arxiv},
+  primaryclass = {cs},
+  publisher = {{arXiv}},
+  doi = {10.48550/arXiv.2110.02871},
+  abstract = {Climate change is a major threat to humanity, and the actions required to prevent its catastrophic consequences include changes in both policy-making and individual behaviour. However, taking action requires understanding the effects of climate change, even though they may seem abstract and distant. Projecting the potential consequences of extreme climate events such as flooding in familiar places can help make the abstract impacts of climate change more concrete and encourage action. As part of a larger initiative to build a website that projects extreme climate events onto user-chosen photos, we present our solution to simulate photo-realistic floods on authentic images. To address this complex task in the absence of suitable training data, we propose ClimateGAN, a model that leverages both simulated and real data for unsupervised domain adaptation and conditional image generation. In this paper, we describe the details of our framework, thoroughly evaluate components of our architecture and demonstrate that our model is capable of robustly generating photo-realistic flooding.},
+  archiveprefix = {arXiv},
+  keywords = {Computer Science - Artificial Intelligence,Computer Science - Computer Vision and Pattern Recognition,Computer Science - Computers and Society},
+  file = {/Users/aleksi/Zotero/storage/Z6LTXFYW/Schmidt et al_2021_ClimateGAN.pdf;/Users/aleksi/Zotero/storage/S6AGRFBE/2110.html}
+}
+
+@misc{Shen2020,
+  title = {{{InterFaceGAN}}: {{Interpreting}} the {{Disentangled Face Representation Learned}} by {{GANs}}},
+  shorttitle = {{{InterFaceGAN}}},
+  author = {Shen, Yujun and Yang, Ceyuan and Tang, Xiaoou and Zhou, Bolei},
+  year = {2020},
+  month = oct,
+  number = {arXiv:2005.09635},
+  eprint = {2005.09635},
+  eprinttype = {arxiv},
+  primaryclass = {cs, eess},
+  publisher = {{arXiv}},
+  abstract = {Although Generative Adversarial Networks (GANs) have made significant progress in face synthesis, there lacks enough understanding of what GANs have learned in the latent representation to map a random code to a photo-realistic image. In this work, we propose a framework called InterFaceGAN to interpret the disentangled face representation learned by the state-of-the-art GAN models and study the properties of the facial semantics encoded in the latent space. We first find that GANs learn various semantics in some linear subspaces of the latent space. After identifying these subspaces, we can realistically manipulate the corresponding facial attributes without retraining the model. We then conduct a detailed study on the correlation between different semantics and manage to better disentangle them via subspace projection, resulting in more precise control of the attribute manipulation. Besides manipulating the gender, age, expression, and presence of eyeglasses, we can even alter the face pose and fix the artifacts accidentally made by GANs. Furthermore, we perform an in-depth face identity analysis and a layer-wise analysis to evaluate the editing results quantitatively. Finally, we apply our approach to real face editing by employing GAN inversion approaches and explicitly training feed-forward models based on the synthetic data established by InterFaceGAN. Extensive experimental results suggest that learning to synthesize faces spontaneously brings a disentangled and controllable face representation.},
+  archiveprefix = {arXiv},
+  langid = {english},
+  keywords = {Computer Science - Computer Vision and Pattern Recognition,Computer Science - Machine Learning,Electrical Engineering and Systems Science - Image and Video Processing},
+  file = {/Users/aleksi/Zotero/storage/Q7CULSY5/Shen et al. - 2020 - InterFaceGAN Interpreting the Disentangled Face R.pdf}
+}
+
+@book{Tufte1998,
+  title = {Visual Explanations: Images and Quantities, Evidence and Narrative},
+  shorttitle = {Visual Explanations},
+  author = {Tufte, Edward R.},
+  year = {1998},
+  edition = {3rd. print., with revisions},
+  publisher = {{Graphics Press}},
+  address = {{Cheshire (Conn.)}},
+  isbn = {978-0-9613921-2-3},
+  langid = {english},
+  keywords = {grafiikka,käyttögrafiikka,kuvallinen ilmaisu,kuvallinen viestintä,semiotiikka,tieto,visuaalinen viestintä,visualisointi}
+}
+
+@book{XX,
+  title = {{{XX}}}
+}

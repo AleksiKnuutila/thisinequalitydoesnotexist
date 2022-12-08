@@ -12,8 +12,8 @@ function change_img() {
 }
 
 function get_random_image_number() {
-  max=10;
-  return Math.floor(Math.random() * max);
+  max=9;
+  return Math.floor(Math.random() * max)+1;
 }
 
 function change_lc_code() {
