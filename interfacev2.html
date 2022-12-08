@@ -53,16 +53,16 @@
           </div>
           <div class="flex-item flex-column">
             <p class="text text-large">
-<input type="hidden" id="latentcode" name="latentcode" value="1"><br><br>
 <button class="custom-button custom-button-primary" onclick="change_lc_code();">Change street</button><br>
-education
-<input id="input_edu" type="range" min="-12" value="0" max="12" step="1">
+Income<br>
+<input id="input_inc" type="range" min="-12" value="0" max="12" step="1" style="width: 300px;"><br>
+Health<br>
+<input id="input_health" type="range" min="-12" value="0" max="12" step="1" style="width: 300px;"><br>
+Education<br>
+<input id="input_edu" type="range" min="-12" value="0" max="12" step="1" style="width: 300px;">
 <br>
-health
-<input id="input_health" type="range" min="-12" value="0" max="12" step="1">
 <br>
-income
-<input id="input_inc" type="range" min="-12" value="0" max="12" step="1">
+<input type="hidden" id="latentcode" name="latentcode" value="1"><br><br>
             </p>
           </div>
         </div>
@@ -98,10 +98,13 @@ Generative models are currently a hot topic in the startup world. They are used 
 What is unique about this site is that the generation of images is guided by data about which parts of London suffer from deprivation of income, health or education. By pulling on the sliders next to images, you can compare the visual differences between privileged or deprived areas of the capital. It is a way to visualise an abstract social process, inequality in the city, that would otherwise be difficult to see.
             </p>
             <p class="text">
-A technical paper describing the project is available <a href="">here</a>.
+The image generation is based on Generative Adverserial Networks (GANs). A technical paper describing the project is available <a href="https://github.com/AleksiKnuutila/thisinequalitydoesnotexist/raw/main/article/Visual%20correlations%20article.pdf">here</a>.
             </p>
             <p class="text">
-This inequality doesn't exist is an experiment in trying out how models such as GANs can be used to produce knowledge. Latent space walks suggest a speculative configuration for knowledge production that relies on synthetic data and retains a role of interpretation by human participants. This process demonstrates the variety of uses that mathematical concepts and technical systems such as the latent spaces of generative models can be put to.
+This inequality doesn't exist is an experiment in trying out how models such as GANs can be used to produce knowledge. Walking through the "latent space" of a GAN suggest a speculative configuration for knowledge production that relies on synthetic data and retains a role of interpretation by human participants. This process suggest that generative models can not just create new media, but visualise and made tangible abstract social processes.
+            <h2>Who made this</h2>
+            <p class="text">
+              ...
             </p>
           </div>
         </div>
