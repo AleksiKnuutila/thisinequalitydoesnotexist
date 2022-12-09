@@ -67,10 +67,10 @@ function nullify_slider_fill(elem) {
 }
 
 function change_slider_fill(elem) {
-  elem.css( 'background', 'linear-gradient(to right, #005BB9 0%, #005BB9 '+get_pct(this.value) +'%, grey ' + get_pct(this.value) + '%, grey 100%)' );
+  $(elem).css( 'background', 'linear-gradient(to right, #005BB9 0%, #005BB9 '+get_pct(elem.value) +'%, grey ' + get_pct(elem.value) + '%, grey 100%)' );
+  console.log(elem.value);
 }
 
 $( '.var_slider' ).on( 'input', function( ) {
-  change_slider_fill($(this));
+  change_slider_fill(this);
 } );
-

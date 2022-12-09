@@ -60,6 +60,12 @@ Health<br>
 <input id="input_health" class="var_slider" type="range" min="-12" value="0" max="12" step="1" style="width: 300px;"><br>
 Education<br>
 <input id="input_edu" class="var_slider" type="range" min="-12" value="0" max="12" step="1" style="width: 300px;">
+<script>
+$( '.var_slider' ).on( 'input', function( ) {
+  console.log($(this).css);
+  change_slider_fill(this);
+} );
+</script>
 <br>
 <br>
 <input type="hidden" id="latentcode" name="latentcode" value="1"><br><br>
