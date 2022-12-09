@@ -60,14 +60,6 @@ Health<br>
 <input id="input_health" class="var_slider" type="range" min="-12" value="0" max="12" step="1" style="width: 300px;"><br>
 Education<br>
 <input id="input_edu" class="var_slider" type="range" min="-12" value="0" max="12" step="1" style="width: 300px;">
-<script>
-$( '.var_slider' ).on( 'input', function( ) {
-  function get_pct(val) {
-    return Math.floor(((parseInt(val)+12)/24)*100);
-  }
-  $( this ).css( 'background', 'linear-gradient(to right, #005BB9 0%, #005BB9 '+get_pct(this.value) +'%, grey ' + get_pct(this.value) + '%, grey 100%)' );
-} );
-</script>
 <br>
 <br>
 <input type="hidden" id="latentcode" name="latentcode" value="1"><br><br>

@@ -16,6 +16,7 @@ function get_random_image_number() {
   return Math.floor(Math.random() * max)+1;
 }
 
+
 function change_lc_code() {
   new_lc=get_random_image_number();
   var lc = document.getElementById('latentcode');
@@ -23,10 +24,13 @@ function change_lc_code() {
 
   var input_edu = document.getElementById('input_edu');
   input_edu.value=0;
+  nullify_slider_fill($(input_edu));
   var input_edu = document.getElementById('input_health');
   input_health.value=0;
+  nullify_slider_fill($(input_health));
   var input_inc = document.getElementById('input_inc');
   input_inc.value=0;
+  nullify_slider_fill($(input_inc));
 
   change_img();
 }
@@ -54,4 +58,19 @@ input_edu.oninput();
 input_health.oninput();
 input_inc.oninput();
 
+function get_pct(val) {
+  return Math.floor(((parseInt(val)+12)/24)*100);
+}
+
+function nullify_slider_fill(elem) {
+  elem.css( 'background', 'linear-gradient(to right, #005BB9 0%, #005BB9 50%, grey 50%, grey 100%)' );
+}
+
+function change_slider_fill(elem) {
+  elem.css( 'background', 'linear-gradient(to right, #005BB9 0%, #005BB9 '+get_pct(this.value) +'%, grey ' + get_pct(this.value) + '%, grey 100%)' );
+}
+
+$( '.var_slider' ).on( 'input', function( ) {
+  change_slider_fill($(this));
+} );
 
