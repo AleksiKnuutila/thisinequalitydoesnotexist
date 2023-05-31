@@ -12,7 +12,7 @@ function change_img() {
 }
 
 function get_random_image_number() {
-  max=9;
+  max=60;
   return Math.floor(Math.random() * max)+1;
 }
 
