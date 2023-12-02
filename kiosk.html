@@ -1,0 +1,146 @@
+<!doctype html>
+<html>
+
+<head>
+  <title>This inequality does not exist</title>
+  <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1">
+  <link href="css/frame.css" media="screen" rel="stylesheet" type="text/css" />
+  <link href="css/controls.css" media="screen" rel="stylesheet" type="text/css" />
+  <link href="css/custom.css" media="screen" rel="stylesheet" type="text/css" />
+  <link href='https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&family=Libre+Franklin:ital,wght@0,100..900;1,100..900&display=swap' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700' rel='stylesheet' type='text/css'>
+  <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="js/menu.js"></script>
+  <script src="js/update_image.js" defer></script>
+  <style>
+    .menu-index {
+      color: rgb(255, 255, 255) !important;
+      opacity: 1 !important;
+      font-weight: 700 !important;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="menu-container"></div>
+  <div class="content-container">
+<!--
+    <div class="banner" style="background: url('img/dummy-background.jpeg') no-repeat center; background-size: cover; height: 200px;"></div>
+    <div class="banner">
+      <div class="banner-table flex-column">
+        <div class="flex-row">
+          <div class="flex-item flex-column">
+            <h2 class="add-top-margin-small">This is the header area</h2>
+            <p class="text">
+              Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel
+              augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget
+              condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum. Nam quam nunc, blandit
+              vel, luctus pulvinar, hendrerit id, lorem.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+-->
+    <div class="content">
+      <div class="content-table flex-column">
+        <!-------------------------------------------------------------------------------------------->
+        <!--Start Intro-->
+        <div class="flex-row">
+          <div class="flex-item flex-column">
+<p style="font-family: Jost; font-size: 50px;">This inequality does not exist</p>
+            <img class="image" id="projimg" src="https://causewegangangan.s3.eu-west-2.amazonaws.com/sg2proj_combined_inference_precise/1/proj_styleganproj_edu0_health0_inc0_code1.jpg">
+          </div>
+          <div class="flex-item flex-column">
+            <p class="text text-large">
+<button class="custom-button custom-button-primary" onclick="change_lc_code();">Change street</button><br>
+Income<br>
+<input id="input_inc" class="var_slider" type="range" min="-12" value="0" max="12" step="1" style="width: 300px;"><br>
+Health<br>
+<input id="input_health" class="var_slider" type="range" min="-12" value="0" max="12" step="1" style="width: 300px;"><br>
+Education<br>
+<input id="input_edu" class="var_slider" type="range" min="-12" value="0" max="12" step="1" style="width: 300px;">
+<script>
+</script>
+<br>
+<br>
+<input type="hidden" id="latentcode" name="latentcode" value="1"><br><br>
+            </p>
+          </div>
+        </div>
+<!--
+        <div class="flex-row">
+          <div class="flex-item flex-column">
+            <p class="text add-top-margin">
+              Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel
+              augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget
+              condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum. Nam quam nunc, blandit
+              vel, luctus pulvinar, hendrerit id, lorem. Maecenas nec odio et ante tincidunt tempus. Donec vitae
+              sapien ut libero venenatis faucibus. Nullam quis ante.
+            </p>
+          </div>
+        </div>
+-->
+        <!--End Intro-->
+        <!-------------------------------------------------------------------------------------------->
+
+        <!--Start Text Only-->
+        <div class="flex-row" style="max-width: 600px">
+          <div class="flex-item flex-column">
+            <h2 id="overview">This inequality does not exist</h2>
+            <hr>
+            <p class="text">
+Generative models such as DALL-E or Generative Adverserial Networks (GANs) are primarily known as accessible, low-cost ways to generate images. Could they also be used to study social phenomena, such as the visual aspects of social processes in cities?
+            </p></a>
+            <p class="text">
+<i>This inequality does not exist</i> is a demo of a generative models, like others in the refrain of <a href="https://thisxdoesnotexist.com">This X does not exist</a>. It displays the outputs of a GAN model that was trained on tens of thousands of photographs of housing in London, sourced from Google Streetview.
+            </p>
+            <h2>How it works</h2>
+            <p class="text">
+We connected the photographs from Streetview with data from the Indices of Multiple Deprivation, describing levels of income, education and environmental health across the city. The resulting GAN model generates novel, synthetic images of housing that can be manipulated according to these contextual variables.
+            </p>
+            <p class="text">
+By pulling on the sliders next to images, you can compare the visual differences between privileged or deprived areas of the capital. It is a way to visualise an abstract social process, inequality in the city, that would otherwise be difficult to see.
+            </p>
+            <p class="text">
+A technical paper describing the project will be available later
+            </p>
+            <p class="text">
+This inequality doesn't exist is an experiment in trying out how models such as GANs can be used to produce knowledge. Latent space walks suggest a speculative configuration for knowledge production that relies on synthetic data and retains a role of interpretation by human participants. This process demonstrates the variety of uses that mathematical concepts and technical systems such as the latent spaces of generative models can be put to.
+            </p>
+            <h2>Who made this</h2>
+            <p class="text">
+The project is authored by <u><a href="https://www.helsinki.fi/fi/tutustu-meihin/ihmiset/henkilohaku/aleksi-knuutila-9084807">Aleksi Knuutila</a></u>. Aleksi Knuutila is an anthropologist and a computational social scientists working at the University of Helsinki and the University of Oxford. His work focuses on combining machine learning with qualitative research workflows, to enable new forms of investigations.
+            </p>
+          </div>
+        </div>
+        <!--End Text Only-->
+        <!-------------------------------------------------------------------------------------------->
+        <!--Start Text with Buttons-->
+        <!--End Credits-->
+        <!-------------------------------------------------------------------------------------------->
+      </div>
+    </div>
+<!--
+    <div class="banner">
+      <div class="banner-table flex-column">
+        <div class="flex-row">
+          <div class="flex-item flex-column">
+            <h2 id="bottomm">This is the footer area</h2>
+            <p class="text add-bottom-margin-large">
+              Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel
+              augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget
+              condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum. Nam quam nunc, blandit
+              vel, luctus pulvinar, hendrerit id, lorem.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+-->
+  </div>
+</body>
+
+</html>
